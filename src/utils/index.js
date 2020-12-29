@@ -1,2 +1,2 @@
-import Lerp from "./lerp";
-export { Lerp };
+import lerp from "./lerp";
+export { lerp };

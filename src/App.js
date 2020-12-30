@@ -15,14 +15,10 @@ export default () => {
   return (
     <>
       <div style={{ height: "100vh", width: "100wh" }}>
-        <Canvas style={{ backgroundColor: "#212121" }}>
-          <perspectiveCamera
-            args={[fov, aspect, near, far]}
-            ref={cameraRef}
-            lookAt={[0, 0, 0]}
-            position={[100, 150, 0]}
-            up={[0, 0, 10]}
-          />
+        <Canvas
+          camera={{ fov, aspect, near, far, lookAt: [0, 0, 0] }}
+          style={{ backgroundColor: "#212121" }}
+        >
           <ambientLight />
           <pointLight intensity={intensity} color={color} />
           <SolarSystem />

@@ -1,2 +1,3 @@
 import SolarSystem from "./solarsystem";
-export { SolarSystem };
+import MeshLines from "./meshlines";
+export { SolarSystem, MeshLines };

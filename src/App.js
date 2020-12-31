@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Canvas } from "react-three-fiber";
 
-import { SolarSystem } from "./example";
+import { SolarSystem, MeshLines } from "./example";
 //import { Box } from "drei";
 const color = 0xffffff;
 const intensity = 3;
@@ -15,14 +15,15 @@ export default () => {
   return (
     <>
       <div style={{ height: "100vh", width: "100wh" }}>
-        <Canvas
+        {/* <Canvas
           camera={{ fov, aspect, near, far, lookAt: [0, 0, 0] }}
           style={{ backgroundColor: "#212121" }}
         >
           <ambientLight />
           <pointLight intensity={intensity} color={color} />
           <SolarSystem />
-        </Canvas>
+        </Canvas> */}
+        <MeshLines />
       </div>
     </>
   );

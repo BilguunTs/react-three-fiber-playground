@@ -1,16 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import { Canvas } from "react-three-fiber";
 
-import { SolarSystem, MeshLines } from "./example";
+import { SolarSystem, MeshLines, CatmulRom } from "./example";
 //import { Box } from "drei";
-const color = 0xffffff;
-const intensity = 3;
-const fov = 40;
-const aspect = 2; // the canvas default
-const near = 0.1;
-const far = 1000;
+// const color = 0xffffff;
+// const intensity = 3;
+// const fov = 40;
+// const aspect = 2; // the canvas default
+// const near = 0.1;
+// const far = 1000;
 export default () => {
-  const cameraRef = useRef();
+  //const cameraRef = useRef();
 
   return (
     <>
@@ -23,7 +23,7 @@ export default () => {
           <pointLight intensity={intensity} color={color} />
           <SolarSystem />
         </Canvas> */}
-        <MeshLines />
+        <CatmulRom />
       </div>
     </>
   );

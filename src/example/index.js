@@ -1,4 +1,5 @@
 import SolarSystem from "./solarsystem";
 import MeshLines from "./meshlines";
-import CatmulRom from "./CatmulroveCurves";
-export { SolarSystem, MeshLines, CatmulRom };
+//import CatmulRom from "./CatmulroveCurves";
+import ModelLoader from "./ModelLoader";
+export { SolarSystem, MeshLines, ModelLoader };

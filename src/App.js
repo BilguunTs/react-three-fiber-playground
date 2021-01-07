@@ -1,6 +1,5 @@
 import React from "react";
-import { ZoomTest } from "./example";
-import { useGLTF } from "@react-three/drei";
+import { CubeOrientation } from "./example";
 
 // function Model() {
 //   const gltf = useGLTF("/scene.gltf", true);
@@ -10,7 +9,7 @@ import { useGLTF } from "@react-three/drei";
 export default () => {
   return (
     <div style={{ height: "100vh", width: "100wh" }}>
-      <ZoomTest />
+      <CubeOrientation />
     </div>
   );
 };
